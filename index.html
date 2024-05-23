@@ -1,248 +1,83 @@
-<!-- 
-    Nome: Gabriel Dias Magarotto    N° 9   Turma: 3B
--->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste do FrameWork Bootstrap</title>
-    <!-- Bootstrap  -->
+    <title>Home Portifólio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
-    <script src="https://kit.fontawesome.com/851a38cf75.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-primary" data-bs-theme="dark"
-            style="position: fixed; z-index: 999; top: 0; left: 0; width: 100%;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#projetos">Gabriel Magarotto</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section1">Contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#hardSkill">Formação</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="menu">
+            <div class="menu-logo">
+                <a href="./index.html"><img src="./images/logo-alcina.png"></a>
+                <h1 class="menu-h1">Alcina Dantas Feijão</h1>
             </div>
+            <ul class="">
+                <li><a target="_blank" href="./home.html">Gabriel Magarotto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="container text-center mt-5">
-            <div class="container m-5 text-uppercase border-bottom mb-4">
-                <a id="projetos">
-                    <h2>Projetos</h2>
-                </a>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./images/magCar.jpg" class="card-img-top" alt="rc car project">
-                        <div class="card-body">
-                            <h5 class="card-title">Carrinho de controle remoto</h5>
-                            <p class="card-text">Nesse projeto, exercitei minhas habilidades de solda junto com meus
-                                conhecimentos de eletrônica, para aprender a fazer uma ponte H e controlar os movimentos
-                                do
-                                carrinho via um microcontrolador. </p>
-                            <a href="https://www.linkedin.com/posts/gabrielmagarotto_carrinho-de-controle-remoto-magcar-1-activity-7135935610069954561-63Yo?utm_source=share&utm_medium=member_desktop"
-                                target="_blank" class="btn btn-primary">Clique para ver mais!</a>
+        <h2 class="gabriel">Portifólio Gabriel D. Magarotto</h2>
+        <div class="gabriel">
+        <div class="p-3" style="width: 40rem; height: 30rem;">
+            <div id="carouselExampleCaptions"  class="carousel slide h-100">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <img src="./images/calculadoraPrimos.jpg"  class="d-block w-100 h-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Site que verifica se um numero é primo</h5>
+                            <p>Para saber sobre isso ou mais informações clicar no meu nome no menu.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./images/eletrica.jpg" class="d-block w-100 h-100" alt="senai">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Habilidades e conhecimentos em eletrica e eletronica.</h5>
+                            <p>Para saber sobre isso ou mais informações clicar no meu nome no menu.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./images/magCar.jpg" class="d-block w-100 h-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Projeto de um carrinho de controle remoto.</h5>
+                            <p>Para saber sobre isso ou mais informações clicar no meu nome no menu.</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./images/manipuladorXYZ.jpg" class="card-img-top"
-                            alt="Manipulador XYZ com impressora 3D">
-                        <div class="card-body">
-                            <h5 class="card-title">Manipulador XYZ com impressora 3D</h5>
-                            <p class="card-text">Esse projeto teve a intenção de exercitar o meu raciocinio logico,
-                                aprender a utilizar outro software cad o onshape e aprender a usar a impresora 3d.</p>
-                            <a href="#" class="btn btn-primary">Clique para ver mais!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./images/calculadoraPrimos.jpg" class="card-img-top" alt="Website Calcula Primos">
-                        <div class="card-body">
-                            <h5 class="card-title">Site identificador de numeros primos.</h5>
-                            <p class="card-text">Nesse site o objetivo foi entender a logica do algoritimo passado no
-                                curso para identificação de um numero primo de forma eficiente.</p>
-                            <a href="https://gmagarotto.github.io/Site_Numeros_Primos/" target="_blank"
-                                class="btn btn-primary">Clique para ver mais!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./images/listaPrimos.jpg" class="card-img-top" alt="Website Calcula Primos">
-                        <div class="card-body">
-                            <h5 class="card-title">Site que lista uma quantidade de numeros primos</h5>
-                            <p class="card-text">Nesse site o objetivo foi aprender a usar o array no JavaScript e
-                                alguns metodos. Foi usado a logica do site que identifica se um numero é primo ou não,
-                                na sua composição.</p>
-                            <a href="https://gmagarotto.github.io/Contador-de-numero-primos/" target="_blank"
-                                class="btn btn-primary">Clique para ver mais!</a>
-                        </div>
-                    </div>
-                </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-
-        <section>
-            <div class="container text-center">
-                <div class="container text-center m-5">
-                    <a id="section1">
-                        <h2 class="text-uppercase border-bottom mb-4">Acesse minhas redes sociais</h2>
-                    </a>
-                </div>
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col">
-                        <!-- Instagram -->
-                        <a target="_blank" href="https://www.instagram.com/gmagarotto_/"><i
-                                class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a>
-                    </div>
-                    <div class="col">
-                        <!-- Linkedin -->
-                        <a target="_blank" href="https://www.linkedin.com/in/gabrielmagarotto/"><i
-                                class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i></a>
-
-                    </div>
-                    <div class="col">
-                        <!-- Youtube -->
-                        <a target="_blank" href="https://www.youtube.com/channel/UC1NhpsORta5vLa6hP3Jd45w"><i
-                                class="fab fa-youtube fa-2x" style="color: #ed302f;"></i></a>
-                    </div>
-                    <div class="col">
-                        <!-- Github -->
-                        <a target="_blank" href="https://github.com/gmagarotto"><i class="fab fa-github fa-2x"
-                                style="color: #333333;"></i></a>
-                    </div>
-                    <div class="col-4"></div>
-                </div>
-        </section>
-
-        <section>
-            <div class="container text-center mt-5">
-                <div class="container text-center m-5">
-                    <a id="skills">
-                        <h2 class="text-uppercase border-bottom mb-4">Veja Minhas Skills</h2>
-                    </a>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/Programação.png" class="card-img-top" alt="Website Calcula Primos">
-                            <div class="card-body">
-                                <h5 class="card-title">Skills em programação</h5>
-                                <p class="card-text">Conhecimento nas seguintes linguagens: Html, css, JavaScript, C,
-                                    C++, PHP,
-                                    Ladder e SFC</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/logoCAD.png" class="card-img-top" alt="Foto de um software CAD">
-                            <div class="card-body">
-                                <h5 class="card-title">Skills em softwares CAD</h5>
-                                <p class="card-text">Habilidade em softwares CAD como Autodesk Inventor, Onshape e
-                                    AutoCAD. Tanto para projetos 2d e 3d.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/logo_pneumatica_e_hidraulica.png" class="card-img-top"
-                                alt="Foto sobre eletrica e Hidraulica">
-                            <div class="card-body">
-                                <h5 class="card-title">Skills Hidraulica e Pneumatica.</h5>
-                                <p class="card-text">Capacidade de construir, planejar e fazer manutenção em de
-                                    circuitos pneumáticos e hidráulicos utilizando os métodos de cascata e cadeia
-                                    estacionária.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/eletrica.jpg" class="card-img-top" alt="Foto sobre eletrica">
-                            <div class="card-body">
-                                <h5 class="card-title">Skills em eletrica</h5>
-                                <p class="card-text">Conhecimento para planejar e fazer manutenção de circuitos
-                                    eletronicos.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container text-center mt-5">
-                <div class="container m-5">
-                    <a id="hardSkill">
-                        <h2 class="text-uppercase border-bottom mb-4">Minhas formações</h2>
-                    </a>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/Senai.png" class="card-img-top" alt="Foto da instituição">
-                            <div class="card-body">
-                                <h5 class="card-title">Mecatrônica</h5>
-                                <p class="card-text">Curso Técnico em Mecatrônica<br>
-                                    Instituição: SENAI Armando de Arruda Pereira<br>
-                                    Semestre: Segundo de três<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/Alcina.jpg" class="card-img-top" alt="Foto da instituição">
-                            <div class="card-body">
-                                <h5 class="card-title">Desenvolvimento Web</h5>
-                                <p class="card-text">Curso de Desenvolvimento de Sites<br>
-                                    Instituição: Escola Alcina Dantas Feijão<br>
-                                    Status: Segundo ano de dois<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5"></div>
-
-                </div>
-            </div>
-        </section>
+    </div>
     </main>
-    <script src="./js/scripts.js"></script>
+    <footer class="rodape">
+        <h2>Aluno da EME Professora Alcina Dantas Feijão</h2>
+        <h2>Endereço: R. Capivari, 500 - Nova Gerti, São Caetano do Sul - SP, 09580-370</h2>
+    </footer>
 </body>
-
+<script src="https://kit.fontawesome.com/851a38cf75.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

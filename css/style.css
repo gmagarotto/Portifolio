@@ -1,0 +1,88 @@
+:root {
+    --cor-primaria: rgb(84, 84, 84); 
+    --cor-secundaria: rgb(65, 65, 241); 
+    --cor-texto: rgb(255, 255, 255); 
+
+  }
+body{
+    background: linear-gradient(to bottom, black, blue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+body header{
+    background-color: var(--cor-secundaria);
+}
+.menu{
+    display: flex;
+    padding: 10px;
+}
+.menu-h1{
+    font-size: 1.5rem;
+}
+.menu ul{
+    margin: 0;
+    margin-bottom: 0;
+    list-style: none;
+    border-radius: 10%;
+}
+.menu ul:hover{
+    background: linear-gradient(to right    , black, blue);
+    transition: ease-out 1s;
+}
+.menu ul li{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: var(--cor-texto);
+
+}
+.menu ul li a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.menu-logo{
+    display: inline-flex;
+}
+.menu-logo img{
+    border-radius: 20%;
+    margin: 0;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+}
+.menu-logo h1{
+    color: var(--cor-texto);
+    padding: 15px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+.rodape{
+    margin-top: 100vh;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px;
+}
+.rodape h2{
+    color: var(--cor-texto);
+    font-size: 20px;
+}
+.gabriel{
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
